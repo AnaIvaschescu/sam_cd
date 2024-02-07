@@ -69,7 +69,7 @@ def calc_TP(pred, label):
 
 if __name__ == '__main__':
     GT_dir = './Levir_CD/test/label/'
-    pred_dir = '/.../SAM_CD/eval/Levir_CD/SAM_CD/'
+    pred_dir = './eval/Levir_CD/SAM_CD/'
       
     info_txt_path = os.path.join(pred_dir, 'info.txt')
     f = open(info_txt_path, 'w+')

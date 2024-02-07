@@ -201,7 +201,6 @@ def predict(net, opt):
                   pred = stitch_pred(preds, size_stitch=imgA.shape[:-1])
               else:
                   tensorA = transF.to_tensor(imgA).unsqueeze(0).to(torch.device('cuda', int(opt.dev_id))).float()
-                  print(tensorA)
                   tensorB = transF.to_tensor(imgB).unsqueeze(0).to(torch.device('cuda', int(opt.dev_id))).float()  
                 #   tensorA = transF.to_tensor(imgA).unsqueeze(0).to(torch.device('cpu')).float()
                 #   tensorB = transF.to_tensor(imgB).unsqueeze(0).to(torch.device('cpu')).float()           

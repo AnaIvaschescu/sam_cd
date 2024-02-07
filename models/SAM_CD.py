@@ -155,7 +155,6 @@ class SAM_CD(nn.Module):
     
         input_shape = x1.shape[-2:]
         featsA = self.run_encoder(x1)
-        print(featsA)
         featsB = self.run_encoder(x2)
         
         featA_s4 = self.Adapter4(featsA[3].clone())

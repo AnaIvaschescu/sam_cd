@@ -22,7 +22,7 @@ from .predict import FastSAMPredictor
 class FastSAM(YOLO):
 
     @smart_inference_mode()
-    def predict(self, source=None, stream=False, **kwargs):
+    def predict(self, source=None, stream=True, **kwargs):
         """
         Perform prediction using the YOLO model.
 
